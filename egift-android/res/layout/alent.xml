@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg" >
+
+    <!-- Screen Design for Photos -->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:textColor="#483C32"
+        android:text="Current Amount" />
+    
+     <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:textColor="#483C32"
+        android:text="" />
+     
+      <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:textColor="#483C32"
+        android:text="Set Virtual Money" />
+      
+       <TextView
+        android:id="@+id/textView4"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:textColor="#483C32"
+        android:text="" />
+       
+        <TextView
+        android:id="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:textColor="#483C32"
+        android:text="Current Virtual Money" />
+        
+         <TextView
+        android:id="@+id/textView6"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:fontFamily="Arial"
+        android:textSize="20dp"
+        android:textColor="#483C32"
+        android:text="" />
+         
+         
+<LinearLayout
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:weightSum="100"
+     android:orientation="horizontal">
+         <Button
+             android:id="@+id/button1"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="50"
+             android:text="Ask Loan" />
+
+         <Button
+             android:id="@+id/button2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="50"
+             android:text="Edit VM" />
+</LinearLayout>
+
+</LinearLayout>
