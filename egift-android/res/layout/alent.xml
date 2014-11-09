@@ -3,105 +3,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/bg" >
-
-    <!-- Screen Design for Photos -->
+    android:paddingTop="20dp" >
 
     <TextView
-        android:id="@+id/textView1"
-        android:layout_marginTop="40dp"
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"
-        android:text="Amount" />
+        android:id="@+id/bal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:gravity="center"
+        android:textSize="34dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Enter identification name"
+             />
+
+    </LinearLayout>
 
     <EditText
-        android:id="@+id/editText1"
-        android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-   
-     
-      <TextView
-        android:id="@+id/textView2"
-        android:layout_marginTop="40dp"
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"
-        android:text="Email" />
-      
-       <EditText
-        android:id="@+id/editText2"
-        android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"/>
-       
-       <TextView
-        android:id="@+id/textView3"
-        android:layout_marginTop="10dp"
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"
-        android:text="Phone" />
-       
-       
-        
-        <EditText
         android:id="@+id/editText3"
-        android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"/>
-        
-        <TextView
-        android:id="@+id/textView4"
-        android:layout_marginTop="10dp"
-        android:layout_width="fill_parent"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"
-        android:text="Expiry Date" />
-       
-       
-        
-        <EditText
-        android:id="@+id/editText4"
-        android:layout_width="fill_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="30dp"
-        android:fontFamily="Arial"
-        android:textSize="20dp"
-        android:textColor="#483C32"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Amount"
+        android:inputType="textPersonName" />
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_marginTop="20dp"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:fontFamily="Arial"
-        	android:textSize="20dp"
-        	android:textColor="#483C32"
-            android:layout_gravity="center"
-            android:text="Send" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" 
+			android:hint="Enter email ID">
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" 
+        android:hint="Enter Phno"/>
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter valid time"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GIVE COUPON" />
 
 </LinearLayout>

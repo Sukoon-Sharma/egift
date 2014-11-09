@@ -38,13 +38,13 @@ import android.widget.Toast;
 public class Borrowed extends Activity {
 	String result;
 	InputStream is;
-	public static List<String[]> myList = new ArrayList<String[]>();
+	
 	String a ;
 	//List<AtomPayment> items;
 	CustomListView adapter=null ;
 	//List<RowItem> rowItems=null;
 	ListView list1;
-	
+	public static List<String[]> myList = new ArrayList<String[]>();
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +66,7 @@ public class Borrowed extends Activity {
 		{
 			//AtomPayment testAtomPayment = new AtomPayment(myList.get(i)[1], 13);
 			//System.out.println(myList.get(i)[0]);
-			RowItem item = new RowItem(R.id.action_settings, myList.get(i)[0], myList.get(i)[1]);
+			RowItem item = new RowItem(R.drawable.redi, myList.get(i)[0], myList.get(i)[1]);
 			rowItems.add(item);
 		}
 		
@@ -148,7 +148,7 @@ System.out.println("inside try catch2");
  int y = jArray.length();
 
 // System.out.println("y="+y);
- 
+ myList = new ArrayList<String[]>();
 for(int i=1;i<y;i++)
 {
 	JSONObject js = jArray.getJSONObject(i);

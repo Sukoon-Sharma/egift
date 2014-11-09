@@ -18,13 +18,13 @@ public class TabLayout extends TabActivity {
         // Tab for Photos
         TabSpec photospec = tabHost.newTabSpec("Info");
         // setting Title and Icon for the Tab
-        photospec.setIndicator("Info", getResources().getDrawable(R.drawable.photos_lent));
+        photospec.setIndicator("Tranc", getResources().getDrawable(R.drawable.photos_lent));
         Intent photosIntent = new Intent(this, Lent.class);
         photospec.setContent(photosIntent);
          
         // Tab for Songs
         TabSpec songspec = tabHost.newTabSpec("Borrowed");        
-        songspec.setIndicator("Borrowed", getResources().getDrawable(R.drawable.photos_borrowed));
+        songspec.setIndicator("Coupons", getResources().getDrawable(R.drawable.photos_borrowed));
         Intent songsIntent = new Intent(this, Borrowed.class);
         songspec.setContent(songsIntent);
         
